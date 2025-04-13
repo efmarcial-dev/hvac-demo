@@ -1,0 +1,224 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/31d703233c.js" crossorigin="anonymous"></script>
+    <title>{% block title %}Nova: HVAC Demo{% endblock %}</title>
+</head>
+<body>
+        <div class="top-bar">
+            <div class="container is-fluid">
+
+                <div class="columns is-mobile is-vcentered">
+                    <div class="column">
+                        <div class="buttons are-small">
+                            <a href="" class="button">
+                                <span class="icon">
+                                    <i class="fab fa-facebook"></i>
+                                </span>
+                            </a>
+                            <a href="" class="button">
+                                <span class="icon">
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column is-narrow">
+                        <span class="icon">
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        <span>919 501 0343</span>
+                    </div>
+                    <div class="column is-narrow">
+                        <span class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span>info@example.com</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+
+        <div class="navbar-brand">
+            <a href="https://novdev.solutions" class="navbar-item">
+                <img src="{% static 'main/images/logo.svg' %}" alt="nova-dev" width="200px">
+            </a>
+            <a role="button" class="navbar-burger" aria-lable="menu" aria-expanded="false" data-target="navbarBasicExample">
+
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+
+            </a>
+        </div>
+
+        <div class="navbar-menu" id="navbarBasic">
+            <div class="navbar-start">
+            
+            </div>
+
+            <div class="navbar-end">
+                <a href="" class="navbar-item is-size-6-desktop is-uppercase">home</a>
+                <a href="" class="navbar-item is-size-6-desktop is-uppercase">shop</a>
+                <a href="" class="navbar-item is-size-6-desktop is-uppercase">product</a>
+                <a href="" class="navbar-item is-size-6-desktop is-uppercase">service</a>
+            </div>
+        </div>
+
+    </nav>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <footer class="main-bg">
+
+
+        <div class="container">
+            <div class="columns has-text-white is-vcentered">
+                <div class="column has-text-centered is-c">
+                    <div class="footer-info is-centered">
+                        <i class="fa fa-location"></i>
+                        <div class="">
+                            <p class="is-has-text-white is-size-6-desktop is-size-6-tablet is-size-7-mobile">54 wilimingto st,</p>
+                            <p class="is-has-text-white is-size-6-desktop is-size-6-tablet is-size-7-mobile">Raliegh NC 27610</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer-info">
+                        <i class="fa fa-envelope"></i>
+                        <div class="">
+                            <p class="is-has-text-white is-size-6-desktop is-size-6-tablet is-size-7-mobile">Email us:</p>
+                            <p class="is-has-text-white is-size-6-desktop is-size-6-tablet is-size-7-mobile">web@novadev.solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer-info">
+                        <i class="fa fa-phone"></i>
+                        <div class="">
+                            <p class="is-has-text-white is-size-6-desktop is-size-6-tablet is-size-7-mobile">Call us on:</p>
+                            <p class="is-has-text-white is-size-6-desktop is-size-6-tablet is-size-7-mobile">(919)501-0343</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns is-vcentered">
+
+                <div class="column">
+                    <div class="columns is-multiline">
+                        <div class="column is-full">
+                            <figure class="image is-3by1">
+                                <img class="footer-logo"  src="{% static 'main/images/footer_logo.svg' %}" alt="nova-dev">
+                            </figure>
+                        </div>
+                        <div class="column is-full">
+                            <p class="is-size-6">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. Aliquam eu accumsan ex. Sed non diam quis ligula dapibus tincidunt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+
+                    <div class="columns is-vcentered is-centered is-multiline">
+                        <div class="column has-text-centered is-full">
+                            <h1 class="mb-5 is-size-6 has-text-white has-text-weight-bold">Useful Links</h1>
+                            <p class="mb-4 is-size-6 ">About Us</p>
+                            <p class="mb-4 is-size-6">Our Team</p>
+                            <p class="mb-4 is-size-6">Pricing Plan</p>
+                            <p class="mb-4 is-size-6">Schedule Appointment</p>
+                            <p class=" is-size-6">Contact Us</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="column">
+
+                    <div class="columns is-vcentered is-multiline">
+                        <div class="column has-text-centered is-centered is-full">
+                            <h1 class="mb-5 is-size-6 has-text-white has-text-weight-bold">Services</h1>
+                            <p class="mb-4 is-size-6">Air Conditioning</p>
+                            <p class="mb-4 is-size-6">Air Ventilation</p>
+                            <p class="mb-4 is-size-6">Duct Cleaning</p>
+                            <p class="mb-4 is-size-6">Heat Pump</p>
+                            <p class=" is-size-6">Heating System</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="column">
+                    <figure class="image is-3by2">
+                        <img class="footer-ac-img" src="{% static 'main/images/single-footer-widget-img-1.png' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <p class="has-text-centered">&copy; 2025 Nova. All rights reserved.</p>
+        </div>
+       
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+
+                    // Get the "data-target" attribute from the "navbar-burger"
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+        });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay:{
+                delay: 3000, // 2.5 seconds between slides
+                disableOnInteraction: false, // Keeps autoplay even when user interacts with slide
+            },
+            speed: 1000, // slide transition speed
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            slidesPerView: 1,
+          });
+        });
+      </script>
+    
+</body>
+</html>
