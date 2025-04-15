@@ -37,6 +37,15 @@
     background:var(--primary-color);
 }
 
+.main-bg-img {
+    background-image: linear-gradient(to right, rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.6), rgba(10, 25, 47, 0.3)),
+    url('../images/banner-home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .hero {
     position: relative;
 }
